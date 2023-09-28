@@ -1,0 +1,575 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,wght@0,400;1,900&family=Oswald:wght@500&family=Poppins:wght@500&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: white;
+    font-family: poppins,sans-serif;
+    /* scroll-behavior: smooth; */
+}
+#main-container{
+    /* border: 2px solid red; */
+    background-color: black;
+    width: 100vw;
+    /* height: 600vh; */
+    display: flex;
+    flex-direction: column;
+}
+#background{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+    max-width: 100%;
+    border-bottom: 10px solid rgb(70, 69, 69);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+#background img{
+    width: 100%;
+    height: 100%;
+    /* height: auto; */
+    object-fit: cover;
+    filter: brightness(50%) contrast(120%) grayscale(35%);
+
+}
+
+.top{
+    width: 100%;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15px;
+    z-index: 12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.top .logos h1{
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Bodoni Moda', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-size: 3rem;
+/* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
+    color: red;
+    
+
+}
+
+.top .lang select{
+    color: white;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 5px;
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.top button{
+    width: 80px;
+    height: 32px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    outline: 0;
+    opacity: 1;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+.top button:hover{
+    opacity: 0.8;
+}
+.lecture
+{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 0 55px;
+    position: absolute;
+    top: 35%;
+    /* left: 50%;
+    transform: translatex(-50%); */
+    z-index: 15;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.lecture .h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.lecture .pre{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.login{
+    align-self: center;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+#login{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid gray;
+    outline: 0  ;
+    width: 25vw;
+    height:55px;
+    padding: 0 15px;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 6px;
+}
+.login button{
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 55px;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+#login:active{
+    border:1.5px solid white
+}
+.login button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.float-1{
+    width: 100%;
+    /* height: 600px; */
+    overflow-y: hidden;
+    /* border: 2px solid red; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+align-items: center;
+gap: 25px    ;
+/* flex-wrap: wrap; */
+text-align: left;
+padding: 70px 0;
+border-bottom: 10px solid rgb(70, 69, 69);
+
+
+}
+.float-1 .title h1{
+    overflow-y: hidden;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.title{
+    max-width: 600px;
+    margin-left: 4vw;
+    /* border: 2px solid red; */
+
+}
+.img{
+    max-width: 700px;
+    margin-right:4vw;
+    /* border: 2px solid red; */
+}
+.img img{
+        width: 100%;
+    }
+
+
+
+
+
+    .float-2{
+        width: 100%;
+        /* height: 600px; */
+        overflow-y: hidden;
+        /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    /* flex-wrap: wrap; */
+    text-align: left;
+    padding: 70px 0;
+    border-bottom: 10px solid rgb(70, 69, 69);
+    
+    }
+    .float-2 .title-2 h1{
+        overflow-y: hidden;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .title-2{
+        max-width: 600px;
+        margin-right: 4vw;
+        /* border: 2px solid red; */
+    
+    }
+    .img-2{
+        max-width: 700px;
+        margin-left:4vw;
+        /* border: 2px solid red; */
+    }
+    .img-2 img{
+            width: 100%;
+        }
+
+        #bottom{
+            width: 70%;
+            height: 700px;
+            /* max-width: 50%; */
+            padding: 65px 0 25px 0;
+            align-self: center;
+            /* border: 2px solid red; */
+            overflow-y: hidden;
+        }
+        #bottom h1{
+            text-align: center;
+        }
+        #bottom .faq{
+            width: 100%;
+            padding: 20px 15px;
+            background-color: rgb(88, 86, 86);
+            margin: 15px;
+        }
+
+        #bottom .faq:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .reme{
+            margin-bottom: 10px;
+            color: white;
+            align-self: center;
+
+        }
+
+        .foru{
+            /* border: 2px solid red; */
+            border-bottom:10px solid rgb(70, 69, 69);
+            padding-bottom: 25px;
+           
+
+        }
+.login-bottom{
+    align-self: center;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    
+}
+#login{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid green;
+    outline: 0  ;
+    width: 25vw;
+    height:55px;
+    padding: 0 15px;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 6px;
+}
+.login-bottom button{
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 55px;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+.login-bottom button:hover{
+    opacity: 0.8;
+}
+
+
+#footer{
+    margin: 45px 0 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#footer .elm ul li{
+    margin: 10px;
+}
+.main{
+    background-color: black;
+
+    background-image: url('bg-1.jpg');
+    /* mix-blend-mode: darken; */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .signin{
+    /* border: 2px solid red; */
+    margin: 25px;
+    width: 550px;
+    max-width:400px;
+    /* position: absolute; */
+    /* top: 40%; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+    padding: 50px 5px;
+}
+.elm{
+    margin: 0 50px;
+}
+.signin h1{
+    align-self: center;
+}
+
+.signin .freek{
+    align-self: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0 20px;
+    width: 80%;
+    height: 55px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: 0;
+    background-color: rgba(146, 142, 142, 0.281);
+    
+}
+.signin button{
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    align-self: center;
+    width: 80%;
+    height: 55px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+}
+.signin button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.main img{
+    filter: brightness(50%) contrast(110%) grayscale(25%);
+}
+.after{
+
+    margin: -5px 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+.after input{
+
+    margin-right: 10px;
+}
+
+#last{
+    margin-left:  50px;
+    margin-right:  50px;
+    margin-bottom: 100px;
+    gap: 15px;
+    margin-top: 30px;
+    /* border: 2px solid red; */
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.later p a{
+    text-decoration: none;
+
+}
+.later p a:hover{
+    text-decoration: underline;
+}
+.afterlate p a{
+    color: rgb(93, 17, 214);
+}
+.later.gray, .afterlate .gray {
+    color: gray !important; 
+    font-size: 14px; 
+}
+
+@media screen and(max-width:400px) {
+    .signin{
+        width: 100%;
+        max-width: 90%;
+        height: 100%;
+
+
+    }
+    .signin .freek{
+        width:80% ;
+        
+    }
+    
+}
+
+@media screen and (max-width:864px) {
+    
+    .float-1{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .float-2{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+    #login{
+        width: 75%;
+    }
+    .login button{
+        width: 200px;
+        height: 35;
+    }
+    .lecture .h1{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .lecture .pre{
+        margin-top: 8px;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .top .logos h1{
+        font-size: 1.5rem;
+    }
+    .login button{
+        width: 130px;
+        height: 40px;
+        font-weight: 400;
+        padding: 0 5px;
+
+        font-size: 1rem;
+    }
+
+
+    
+
+
+    
+}
+
+@media screen and (max-width:495px){
+    .float-1 .title h1{
+        font-size: 1.5rem;
+    }
+
+    .float-2 .title-2 h1{
+      font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:390px){
+    .top .lang select{
+
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0 5px;
+    width: 80px;
+    height: 25px;
+        
+    }
+
+    .top .lang button{
+        font-size: 0.8rem;
+        font-weight: 400;
+        padding: 0 5px;
+        width: 80px;
+        height: 25px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    #footer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    #footer .elm{
+        border-bottom: 1px solid gray;
+    }
+
+    
+}
+
+@media screen and(max-width: 412px) and (min-width:300px){
+    #footer{
+        flex-direction: row;
+        justify-content: start;
+    }
+    #footer .elm{
+        border-bottom: 1px solid gray;
+    }
+
+    
+}
